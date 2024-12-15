@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "cecbd30f-eeed-487f-a03d-ab0d44ff7a7e",
+		"name": "Event-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34810071",
+		"_collection_link": "https://test88-8361.postman.co/workspace/Image-Resize-for-Brain~31632dd0-6a81-4ff1-ad10-cf4a58e33828/collection/34810071-cecbd30f-eeed-487f-a03d-ab0d44ff7a7e?action=share&source=collection_link&creator=34810071"
+	},
+	"item": [
+		{
+			"name": "Add a new Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eventName\": \"Green Energy Conference\",\n    \"eventDate\": \"2024-07-18T09:00:00.000Z\",\n    \"organizer\": \"Vikram Khanna\",\n    \"email\": \"vikram.khanna@example.com\",\n    \"phone\": \"654-987-1234\",\n    \"location\": {\n        \"street\": \"India Habitat Center\",\n        \"city\": \"New Delhi\",\n        \"state\": \"Delhi\",\n        \"zip\": \"110003\"\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/events/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/events/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						""
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "bengaluru",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "Karnataka",
+							"disabled": true
+						},
+						{
+							"key": "organizer",
+							"value": "Vikram Khanna",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get an event by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/events/675eb3b9b563e3e08f7e1ee0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						"675eb3b9b563e3e08f7e1ee0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an event",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eventName\": \"Tech Conference 2024\",\n    \"eventDate\": \"2024-12-20T10:30:00.000Z\",\n    \"organizer\": \"Nisha Majhi\",\n    \"email\": \"nishamajhi@example.com\",\n    \"phone\": \"123-456-7890\",\n    \"location\": {\n        \"street\": \"kohinoor mall\",\n        \"city\": \"Mumbai\",\n        \"state\": \"Maharashtra\",\n        \"zip\": \"400072\"\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/events/675eb697a4218612b6f776fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						"675eb697a4218612b6f776fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an Event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/events/675eb3b9b563e3e08f7e1ee0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						"675eb3b9b563e3e08f7e1ee0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
