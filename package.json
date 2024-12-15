@@ -1,9 +1,9 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "main": "src/server.ts",
+  "main": "index.ts",
   "scripts": {
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --watch src --exec ts-node src/server.ts\"",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --watch src --exec ts-node index.ts\"",
     "build": "npx tsc",
     "start": "node index.ts"
   },
