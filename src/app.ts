@@ -15,7 +15,7 @@ app.use("/public", express.static(path.join(__dirname, "../public")));
 
 app.use("/api/v1", router)
 
-app.get("/api/v1", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
     res.status(200).json({ message: "Event Management" })
 })
 
