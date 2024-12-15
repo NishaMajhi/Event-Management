@@ -47,34 +47,6 @@ The goal of this project is to provide a **clean**, **well-structured**, and **m
 }
 ```
 
-----
-## 📁 Project Structure
-project-root/
-│
-├── src/
-│   ├── controllers/
-│   │   └── event.controller.ts          # Handles business logic for event-related operations
-│   │
-│   ├── routers/
-│   │   ├── index.router.ts            # Handles routing logic for the entire app
-│   │   └── event.route.ts            # Defines event-specific routes
-│   │
-│   ├── models/
-│   │   └── event.model.ts            # Defines database schema for Event
-│   │
-│   ├── config/
-│   │   └── db.ts                     # Handles database connection logic
-│   │
-│   ├── app.ts                         # Sets up Express server and middleware
-│   └── server.ts                      # Bootstraps the server
-│
-├── .env                                # Environment variables for secure configuration
-├── package.json                        # Project dependencies and scripts
-├── package-lock.json                   # Locked dependencies
-├── tsconfig.json                       # TypeScript configuration
-└── README.md                            # Project documentation
-
-
 ## 📚 API Endpoints
 1️⃣ Create a New Event
 Endpoint:
