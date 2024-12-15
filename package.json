@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --watch src --exec ts-node src/server.ts\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --watch src --exec ts-node src/server.ts\"",
+    "build": "npx tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
